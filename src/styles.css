@@ -1,16 +1,41 @@
 /* @import here */
 
 :root {
-    /*Example: --bg-color: #faebd7; */
+  /*Font Elements*/
+  --fs-small: 0.8rem;
+  --fs-reg: 1.1rem;
+  --fs-large: 1.5rem;
+  --fc-dark:;
+  --fc-reg: hsl(15, 5%, 70%);
+  /*Other Elements*/
+  --bg-color: hsl(220, 80%, 20%);
+  --brdr-color: hsl(20, 10%, 30%);
+  /*Body Elements*/
+  --body-bg-color: hsl(251, 100%, 10%);
+}
 
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-size: var(--fs-reg);
-    color: var(--fc-std);
-  }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: var(--fs-reg);
+  color: var(--fc-reg);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--body-bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appContainer {
+  background-color: var(--bg-color);
+  border: 3px outset var(--brdr-color);
+  padding-inline: 1.5rem;
+  padding-block: 1rem;
+  border-radius: 25px;
+}

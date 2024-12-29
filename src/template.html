@@ -1,11 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="appContainer">
+      <div class="headerArea">
+        <div class="locationWrapper">
+          <form novalidate>
+            <input
+              class="locationInput"
+              type="text"
+              name="location"
+              id="locationInput"
+              required
+            />
+            <button
+              class="locationSubmitBtn"
+              id="locationSubmitBtn"
+              type="button"
+            >
+              O
+            </button>
+          </form>
+          <div class="locationDisplay">
+            <div class="locationIcon">O</div>
+            <div class="locationText">Rome, Italy</div>
+          </div>
+        </div>
+        <div class="weatherDescription">Mostly Sunny</div>
+      </div>
+      <div class="mainArea"></div>
+      <div class="footerArea"></div>
+    </div>
+  </body>
 </html>
