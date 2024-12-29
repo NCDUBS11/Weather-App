@@ -1,7 +1,3 @@
-# top_todo
+# weather app
 
-Todo list for the Odin Project.
-
-Todo list manager.  Generate and track multiple todo lists! Individual "todo items" can also contain additional information or details. 
-
-Lists are saved in localStorage only.
+Weather app that provides expected current-day weather forecast info.
