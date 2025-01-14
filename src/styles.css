@@ -5,10 +5,11 @@
   --fs-small: 0.8rem;
   --fs-reg: 1.1rem;
   --fs-large: 1.5rem;
-  --fc-dark:;
-  --fc-reg: hsl(15, 5%, 70%);
+  --fc-alt: hsl(10, 10%, 20%);
+  --fc-reg: hsl(20, 20%, 90%);
   /*Other Elements*/
   --bg-color: hsl(220, 80%, 20%);
+  --bg-color-alt: hsl(220, 80%, 90%);
   --brdr-color: hsl(20, 10%, 30%);
   /*Body Elements*/
   --body-bg-color: hsl(251, 100%, 10%);
@@ -34,13 +35,20 @@ body {
 }
 
 .appContainer {
+  --width: 375px;
   background-color: var(--bg-color);
   border: 3px outset var(--brdr-color);
   padding: 1rem;
   border-radius: 25px;
-  width: 375px;
+  width: var(--width);
+  height: calc(var(--width) * 0.5);
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 4fr 1fr;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
 }
 
 .headerArea {
@@ -48,14 +56,49 @@ body {
   justify-content: space-between;
 }
 
+.locationWrapper {
+  max-width: 50%;
+}
+
 .locationDisplay {
   display: flex;
+  /* display: none; */
+}
+
+.locationText:hover {
+  cursor: pointer;
+  filter: brightness(90);
 }
 
 .locationIcon {
   margin-inline: 0.25rem;
+  height: 1.25rem;
+  filter: brightness(90%);
 }
 
 form {
   display: none;
+  /* display: flex; */
+}
+
+.locationInput {
+  color: var(--fc-alt);
+  width: 100%;
+  background-color: var(--bg-color-alt);
+  border-radius: 10px;
+  padding-inline-start: 0.5rem;
+}
+
+.locationInput::placeholder {
+  color: var(--fc-alt);
+}
+
+.locationSubmitBtn {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  padding: 0;
 }

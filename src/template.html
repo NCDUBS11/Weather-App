@@ -3,30 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo List</title>
+    <title>Weather App</title>
   </head>
   <body>
     <div class="appContainer">
       <div class="headerArea">
         <div class="locationWrapper">
           <form novalidate>
+            <button
+              class="locationSubmitBtn iconContainer"
+              id="locationSubmitBtn"
+              type="button"
+            >
+              <img
+                class="locationIcon"
+                src="./weatherIcons/additionalIcons/addLocation.png"
+                alt="add location"
+              />
+            </button>
             <input
               class="locationInput"
               type="text"
               name="location"
               id="locationInput"
+              placeholder="Enter a city"
               required
             />
-            <button
-              class="locationSubmitBtn"
-              id="locationSubmitBtn"
-              type="button"
-            >
-              O
-            </button>
           </form>
           <div class="locationDisplay">
-            <div class="locationIcon">O</div>
+            <div class="iconContainer">
+              <img
+                class="locationIcon"
+                src="./weatherIcons/additionalIcons/location.png"
+                alt="location icon"
+              />
+            </div>
             <div class="locationText">Rome, Italy</div>
           </div>
         </div>
