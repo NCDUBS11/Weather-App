@@ -2,14 +2,14 @@
 
 :root {
   /*Font Elements*/
-  --fs-small: 0.8rem;
-  --fs-reg: 1.1rem;
-  --fs-large: 1.5rem;
+  --fs-small: 0.85rem;
+  --fs-reg: 1rem;
+  --fs-large: 2.5rem;
   --fc-alt: hsl(10, 10%, 20%);
   --fc-reg: hsl(20, 20%, 90%);
   /*Other Elements*/
   --bg-color: hsl(220, 80%, 20%);
-  --bg-color-alt: hsl(220, 80%, 90%);
+  --bg-color-alt: hsl(220, 50%, 30%);
   --brdr-color: hsl(20, 10%, 30%);
   /*Body Elements*/
   --body-bg-color: hsl(251, 100%, 10%);
@@ -35,13 +35,13 @@ body {
 }
 
 .appContainer {
-  --width: 375px;
+  --width: 330px;
   background-color: var(--bg-color);
   border: 3px outset var(--brdr-color);
-  padding: 1rem;
+  padding: 1.25rem;
   border-radius: 25px;
   width: var(--width);
-  height: calc(var(--width) * 0.5);
+  height: calc(var(--width) * 0.575);
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
 }
@@ -54,6 +54,7 @@ body {
 .headerArea {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .locationWrapper {
@@ -71,7 +72,7 @@ body {
 }
 
 .locationIcon {
-  margin-inline: 0.25rem;
+  margin-inline-end: 0.25rem;
   height: 1.25rem;
   filter: brightness(90%);
 }
@@ -101,4 +102,55 @@ form {
   color: inherit;
   font-size: inherit;
   padding: 0;
+}
+
+.mainArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tempDisplay {
+  font-size: var(--fs-large);
+}
+
+.wrapper {
+  display: flex;
+}
+
+.footerArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.secondary {
+  flex: 1;
+  max-width: 90px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color-alt);
+  border-radius: 15px;
+  padding-inline: 0.5rem;
+  padding-block: 0.15rem;
+  gap: 1rem;
+}
+
+.secondary img {
+  filter: brightness(0.85);
+}
+
+.weatherIcon {
+  filter: invert();
+  height: 4.5rem;
+  padding-inline-end: 0.25rem;
+}
+
+.secondaryIcon {
+  filter: invert();
+  height: calc(var(--fs-reg) * 1.2);
+}
+.secondaryValue {
+  font-size: var(--fs-small);
 }
