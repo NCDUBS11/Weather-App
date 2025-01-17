@@ -9,7 +9,7 @@
   --fc-reg: hsl(20, 20%, 90%);
   /*Other Elements*/
   --bg-color: hsl(220, 80%, 20%);
-  --bg-color-alt: hsl(220, 50%, 30%);
+  --bg-color-alt: hsl(220, 32%, 35%);
   --brdr-color: hsl(20, 10%, 30%);
   /*Body Elements*/
   --body-bg-color: hsl(251, 100%, 10%);
@@ -41,7 +41,7 @@ body {
   padding: 1.25rem;
   border-radius: 25px;
   width: var(--width);
-  height: calc(var(--width) * 0.575);
+  height: calc(var(--width) * 0.6);
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
 }
@@ -132,8 +132,8 @@ form {
   justify-content: space-between;
   background-color: var(--bg-color-alt);
   border-radius: 15px;
-  padding-inline: 0.5rem;
-  padding-block: 0.15rem;
+  padding-inline: 0.6rem;
+  padding-block: 0.25rem;
   gap: 1rem;
 }
 
