@@ -7,12 +7,13 @@
   --fs-large: 2.5rem;
   --fc-alt: hsl(10, 10%, 20%);
   --fc-reg: hsl(20, 20%, 90%);
+  --fc-error: hsl(0, 75%, 49%);
   /*Other Elements*/
   --bg-color: hsl(220, 80%, 20%);
   --bg-color-alt: hsl(220, 32%, 35%);
   --brdr-color: hsl(20, 10%, 30%);
   /*Body Elements*/
-  --body-bg-color: hsl(251, 100%, 10%);
+  --body-bg-color: hsl(0, 0%, 11%);
 }
 
 * {
@@ -35,7 +36,7 @@ body {
 }
 
 .appContainer {
-  --width: 330px;
+  --width: 335px;
   background-color: var(--bg-color);
   border: 3px outset var(--brdr-color);
   padding: 1.25rem;
@@ -62,8 +63,8 @@ body {
 }
 
 .locationDisplay {
-  display: flex;
-  /* display: none; */
+  /* display: flex; */
+  display: none;
 }
 
 .locationText:hover {
@@ -78,12 +79,13 @@ body {
 }
 
 form {
-  display: none;
-  /* display: flex; */
+  /* display: none; */
+  display: flex;
+  position: relative;
 }
 
 .locationInput {
-  color: var(--fc-alt);
+  color: var(--fc-reg);
   width: 100%;
   background-color: var(--bg-color-alt);
   border-radius: 10px;
@@ -91,7 +93,7 @@ form {
 }
 
 .locationInput::placeholder {
-  color: var(--fc-alt);
+  color: var(--fc-reg);
 }
 
 .locationSubmitBtn {
@@ -102,6 +104,16 @@ form {
   color: inherit;
   font-size: inherit;
   padding: 0;
+  transition: scale 0.03s ease-in-out;
+}
+
+.locationSubmitBtn:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.locationSubmitBtn:active {
+  scale: 0.9;
 }
 
 .mainArea {
@@ -127,14 +139,12 @@ form {
 
 .secondary {
   flex: 1;
-  max-width: 90px;
   align-items: center;
   justify-content: space-between;
   background-color: var(--bg-color-alt);
   border-radius: 15px;
   padding-inline: 0.6rem;
   padding-block: 0.25rem;
-  gap: 1rem;
 }
 
 .secondary img {

@@ -9,7 +9,7 @@
     <div class="appContainer">
       <div class="headerArea">
         <div class="locationWrapper">
-          <form novalidate>
+          <form id="form" validate>
             <button
               class="locationSubmitBtn iconContainer"
               id="locationSubmitBtn"
@@ -17,7 +17,7 @@
             >
               <img
                 class="locationIcon"
-                src="./weatherIcons/additionalIcons/addLocation.png"
+                src="./weatherIcons/additionalIcons/search.png"
                 alt="add location"
               />
             </button>
@@ -38,15 +38,16 @@
                 alt="location icon"
               />
             </div>
-            <div class="locationText">Rome, Italy</div>
+            <div class="locationText" id="resolvedAddress">-</div>
           </div>
         </div>
-        <div class="weatherDescription">Mostly Sunny</div>
+        <div class="weatherDescription" id="conditions">-</div>
       </div>
       <div class="mainArea">
-        <div class="tempDisplay">21F</div>
+        <div class="tempDisplay" id="temp">-</div>
         <div class="wrapper">
           <img
+            id="weatherIcon"
             class="weatherIcon"
             src="./weatherIcons/clear-day.png"
             alt="weather Icon"
@@ -60,7 +61,7 @@
             alt="secondary icon"
             class="secondaryIcon"
           />
-          <div class="secondaryValue">10%</div>
+          <div class="secondaryValue" id="precipprob">-</div>
         </div>
         <div class="wrapper secondary">
           <img
@@ -68,7 +69,7 @@
             alt="secondary icon"
             class="secondaryIcon"
           />
-          <div class="secondaryValue">10%</div>
+          <div class="secondaryValue" id="humidity">-</div>
         </div>
         <div class="wrapper secondary">
           <img
@@ -76,7 +77,7 @@
             alt="secondary icon"
             class="secondaryIcon"
           />
-          <div class="secondaryValue">7mph</div>
+          <div class="secondaryValue" id="windspeed">-</div>
         </div>
       </div>
     </div>
