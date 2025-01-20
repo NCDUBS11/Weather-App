@@ -1,0 +1,47 @@
+import clearDay from "./weatherIcons/clear-day.png";
+import clearNight from "./weatherIcons/clear-night.png";
+import cloudy from "./weatherIcons/cloudy.png";
+import fog from "./weatherIcons/fog.png";
+import hail from "./weatherIcons/hail.png";
+import partlyCloudyDay from "./weatherIcons/partly-cloudy-day.png";
+import partlyCloudyNight from "./weatherIcons/partly-cloudy-night.png";
+import rainSnowShowersDay from "./weatherIcons/rain-snow-showers-day.png";
+import rainSnowShowersNight from "./weatherIcons/rain-snow-showers-night.png";
+import rainSnow from "./weatherIcons/rain-snow.png";
+import rain from "./weatherIcons/rain.png";
+import showersDay from "./weatherIcons/showers-day.png";
+import showersNight from "./weatherIcons/showers-night.png";
+import sleet from "./weatherIcons/sleet.png";
+import snowShowersDay from "./weatherIcons/snow-showers-day.png";
+import snowShowersNight from "./weatherIcons/snow-showers-night.png";
+import snow from "./weatherIcons/snow.png";
+import thunderRain from "./weatherIcons/thunder-rain.png";
+import thunderShowersDay from "./weatherIcons/thunder-showers-day.png";
+import thunderShowersNight from "./weatherIcons/thunder-showers-night.png";
+import thunder from "./weatherIcons/thunder.png";
+import wind from "./weatherIcons/wind.png";
+
+export const weatherList = [
+  { "clear-day": clearDay },
+  { "clear-night": clearNight },
+  { cloudy: cloudy },
+  { fog: fog },
+  { hail: hail },
+  { "partly-cloudy-day": partlyCloudyDay },
+  { "partly-cloudy-night": partlyCloudyNight },
+  { "rain-snow-showers-day": rainSnowShowersDay },
+  { "rain-snow-showers-night": rainSnowShowersNight },
+  { "rain-snow": rainSnow },
+  { rain: rain },
+  { "showers-day": showersDay },
+  { "showers-night": showersNight },
+  { sleet: sleet },
+  { "snow-showers-day": snowShowersDay },
+  { "snow-showers-night": snowShowersNight },
+  { snow: snow },
+  { "thunder-rain": thunderRain },
+  { "thunder-showers-day": thunderShowersDay },
+  { "thunder-showers-night": thunderShowersNight },
+  { thunder: thunder },
+  { wind: wind },
+];

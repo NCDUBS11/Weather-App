@@ -26,5 +26,8 @@ export async function getWeatherData(query) {
         icon: weatherData.currentConditions.icon,
       };
     })
-    .catch((err) => console.log(err));
+    .catch((err) => {
+      console.log(err);
+      return 0;
+    });
 }
